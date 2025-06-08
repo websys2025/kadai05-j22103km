@@ -14,6 +14,8 @@
     <script>
         async function some_api(myForm) {
             // ここにコードを書く
+            const url = "https://www.boredapi.com/api/activity/";
+            const data = await url.json();
             document.getElementById("result").innerHTML += myForm.form_data.value+"<br />";
             document.apiform.reset();
         }
